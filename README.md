@@ -1,6 +1,7 @@
 # xray-ui
 
-对https://github.com/qist/xray-ui项目中的xray默认配置文件中，移除了阻止category-ads-all的设置，（不然加载不出来recaptcha），进行重新编译。
+对 https://github.com/qist/xray-ui
+项目中的xray默认配置文件中，移除了阻止category-ads-all的设置，（不然加载不出来recaptcha），进行重新编译。
 
 
 ## 一键安装
