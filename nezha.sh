@@ -96,7 +96,7 @@ pre_check() {
             Docker_IMG="ghcr.io\/naiba\/nezha-dashboard"
         else
             GITHUB_RAW_URL="gitee.com/naibahq/nezha/raw/master"
-            GITHUB_URL="github.com"
+            GITHUB_URL="gh.aws-shop.uk/github.com"
             Get_Docker_URL="get.docker.com"
             Get_Docker_Argu=" -s docker --mirror Aliyun"
             Docker_IMG="registry.cn-shanghai.aliyuncs.com\/naibahq\/nezha-dashboard"
@@ -217,11 +217,12 @@ install_arch() {
 }
 
 install_soft() {
-    (command -v yum >/dev/null 2>&1 && yum makecache && yum install $* selinux-policy -y) ||
-        (command -v apt >/dev/null 2>&1 && apt update && apt install $* selinux-utils -y) ||
-        (command -v pacman >/dev/null 2>&1 && pacman -Syu $* base-devel --noconfirm && install_arch) ||
-        (command -v apt-get >/dev/null 2>&1 && apt-get update && apt-get install $* selinux-utils -y) ||
-        (command -v apk >/dev/null 2>&1 && apk update && apk add $* -f)
+    echo "skip install_soft"
+#    (command -v yum >/dev/null 2>&1 && yum makecache && yum install $* selinux-policy -y) ||
+#        (command -v apt >/dev/null 2>&1 && apt update && apt install $* selinux-utils -y) ||
+#        (command -v pacman >/dev/null 2>&1 && pacman -Syu $* base-devel --noconfirm && install_arch) ||
+#        (command -v apt-get >/dev/null 2>&1 && apt-get update && apt-get install $* selinux-utils -y) ||
+#        (command -v apk >/dev/null 2>&1 && apk update && apk add $* -f)
 }
 
 install_dashboard() {
@@ -317,7 +318,7 @@ install_agent() {
 
     echo -e "正在获取监控Agent版本号"
 
-    local version=$(curl -m 10 -sL "https://api.github.com/repos/nezhahq/agent/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
+    local version=$(curl -m 10 -sL "https://gh.aws-shop.uk/https://api.github.com/repos/nezhahq/agent/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
     if [ ! -n "$version" ]; then
         version=$(curl -m 10 -sL "https://fastly.jsdelivr.net/gh/nezhahq/agent/" | grep "option\.value" | awk -F "'" '{print $2}' | sed 's/nezhahq\/agent@/v/g')
     fi
@@ -326,7 +327,7 @@ install_agent() {
     fi
 
     if [ ! -n "$version" ]; then
-        echo -e "获取版本号失败，请检查本机能否链接 https://api.github.com/repos/nezhahq/agent/releases/latest"
+        echo -e "获取版本号失败，请检查本机能否链接 https://gh.aws-shop.uk/https://api.github.com/repos/nezhahq/agent/releases/latest"
         return 0
     else
         echo -e "当前最新版本为: ${version}"
