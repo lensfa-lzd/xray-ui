@@ -1,16 +1,16 @@
 ap-east-1:
-    name: Asia Pacific (Hong Kong)
-    settings: 128*2(c6i) + 64(c6g)
-    security_group: sg-0d55a2423e3533fbd
-    images:
-        # default -> Amazon Linux 2023 AMI
-        default_x86:
-            image_id: ami-07318fd54a1e93848
-            snapshot_id: snap-01fcd9df57e6c538d
-            device_name: /dev/xvda
-            mini_size: 8
-        default_arm:
-            image_id: ami-0a305c2b3f33f9f1c
-            snapshot_id: snap-08978c828903b5f2b
-            device_name: /dev/xvda
-            mini_size: 8
+  name: Asia Pacific (Hong Kong)
+  settings: 128*2(c6i) + 64(c6g)
+  security_group: sg-0d55a2423e3533fbd
+  images:
+    # default -> Amazon Linux 2023 AMI
+    default_x86:
+      image_id: ami-07318fd54a1e93848
+      snapshot_id: snap-01fcd9df57e6c538d
+      device_name: /dev/xvda
+      mini_size: 8
+    default_arm:
+      image_id: ami-0a305c2b3f33f9f1c
+      snapshot_id: snap-08978c828903b5f2b
+      device_name: /dev/xvda
+      mini_size: 8
