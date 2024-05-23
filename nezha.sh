@@ -333,6 +333,9 @@ install_agent() {
         echo -e "当前最新版本为: ${version}"
     fi
 
+    # 强制固定版本
+    version="v0.16.9"
+
     # 哪吒监控文件夹
     mkdir -p $NZ_AGENT_PATH
     chmod 777 -R $NZ_AGENT_PATH
