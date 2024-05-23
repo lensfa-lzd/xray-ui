@@ -59,8 +59,8 @@ ap-northeast-3:
       snapshot_id: snap-023c674edc8c2285e
       device_name: /dev/xvda
       mini_size: 8
-#    custom_x86:
-#      image_id: ami-08a63c56b4e61dccd
-#      snapshot_id: snap-023c674edc8c2285e
-#      device_name: /dev/xvda
-#      mini_size: 10
+    custom_x86:
+      image_id: ami-0a602eb23d613b022
+      snapshot_id: snap-081f51b2e7514f24a
+      device_name: /dev/xvda
+      mini_size: 10
