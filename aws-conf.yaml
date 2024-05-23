@@ -14,11 +14,11 @@ ap-east-1:
       snapshot_id: snap-08978c828903b5f2b
       device_name: /dev/xvda
       mini_size: 8
-#    custom_arm:
-#      image_id: ami-0b7a2b00076e0e765
-#      snapshot_id: snap-0d9fe096d8f428e9b
-#      device_name: /dev/xvda
-#      mini_size: 10
+    custom_arm:
+      image_id: ami-0b8b4a7635430d3be
+      snapshot_id: snap-09bcba0ef3cbb75a4
+      device_name: /dev/xvda
+      mini_size: 10
 ap-south-1:
   name: Asia Pacific (印度 孟买)
   settings: 32(c7g)
