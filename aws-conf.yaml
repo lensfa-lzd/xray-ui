@@ -14,11 +14,11 @@ ap-east-1:
       snapshot_id: snap-08978c828903b5f2b
       device_name: /dev/xvda
       mini_size: 8
-    custom_arm:
-      image_id: ami-0b7a2b00076e0e765
-      snapshot_id: snap-0d9fe096d8f428e9b
-      device_name: /dev/xvda
-      mini_size: 10
+#    custom_arm:
+#      image_id: ami-0b7a2b00076e0e765
+#      snapshot_id: snap-0d9fe096d8f428e9b
+#      device_name: /dev/xvda
+#      mini_size: 10
 ap-south-1:
   name: Asia Pacific (印度 孟买)
   settings: 32(c7g)
@@ -60,7 +60,7 @@ ap-northeast-3:
       device_name: /dev/xvda
       mini_size: 8
     custom_x86:
-      image_id: ami-0a602eb23d613b022
-      snapshot_id: snap-081f51b2e7514f24a
+      image_id: ami-01581527bdef16eae
+      snapshot_id: snap-003cc3eb03d513853
       device_name: /dev/xvda
       mini_size: 10
