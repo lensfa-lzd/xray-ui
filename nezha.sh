@@ -89,7 +89,7 @@ pre_check() {
         if [[ -z "${CN}" ]]; then
             # curl -sL https://${GITHUB_RAW_URL}/script/install.sh -o /tmp/nezha.sh
             # https://gh.aws-shop.uk/https://github.com/hunshcn/project/archive/master.zip
-            GITHUB_RAW_URL="gh.aws-shop.uk/https://raw.githubusercontent.com/naiba/nezha/master"
+            GITHUB_RAW_URL="gh.aws-shop.uk/https://raw.githubusercontent.com/naiba/nezha/890616f52ae68756903654c39cfc9d71bf68beea"
             GITHUB_URL="gh.aws-shop.uk/https://github.com"
             Get_Docker_URL="get.docker.com"
             Get_Docker_Argu=" "
