@@ -19,36 +19,6 @@ ap-east-1:
       snapshot_id: snap-09bcba0ef3cbb75a4
       device_name: /dev/xvda
       mini_size: 10
-ap-south-1:
-  name: Asia Pacific (印度 孟买)
-  settings: 32(c7g)
-  security_group: sg-004f0621efd4ba6e1
-  images:
-    default_x86:
-      image_id: ami-0cc9838aa7ab1dce7
-      snapshot_id: snap-0367a3fe302b78a89
-      device_name: /dev/xvda
-      mini_size: 8
-    default_arm:
-      image_id: ami-08edb522fe54744b1
-      snapshot_id: snap-000e711a1e19526e3
-      device_name: /dev/xvda
-      mini_size: 8
-ap-south-2:
-  name: Asia Pacific (印度 海得拉巴)
-  settings: 32(c7g)
-  security_group: sg-0bd6d36bdd5466a90
-  images:
-    default_x86:
-      image_id: ami-02c44bfb8471e946d
-      snapshot_id: snap-05764e3bf28f4e4b0
-      device_name: /dev/xvda
-      mini_size: 8
-    default_arm:
-      image_id: ami-08a63c56b4e61dccd
-      snapshot_id: snap-0c884d5eec0848ea1
-      device_name: /dev/xvda
-      mini_size: 8
 ap-northeast-3:
   name: Asia Pacific (Osaka 日本-大版)
   settings: 128*3(c6i)
@@ -59,8 +29,33 @@ ap-northeast-3:
       snapshot_id: snap-023c674edc8c2285e
       device_name: /dev/xvda
       mini_size: 8
-    custom_x86:
-      image_id: ami-01581527bdef16eae
-      snapshot_id: snap-003cc3eb03d513853
+ca-west-1:
+  name: Canada West (Calgary 加拿大-卡尔加里)
+  settings: 128*3(c6i)
+  security_group: sg-095704fa29d0c2018
+  images:
+    default_x86:
+      image_id: ami-0777cc4a534bdfd39
+      snapshot_id: snap-0e1e38c7d4c9e9733
       device_name: /dev/xvda
-      mini_size: 10
+      mini_size: 8
+eu-west-1:
+  name: EU (Ireland 英国-爱尔兰)
+  settings: 128*3(c6a)
+  security_group: sg-092e1ecd76be9b210
+  images:
+    default_x86:
+      image_id: ami-0ac67a26390dc374d
+      snapshot_id: snap-06f6ab0f3462928e7
+      device_name: /dev/xvda
+      mini_size: 8
+eu-north-1:
+  name: EU (Stockholm 瑞典-斯德哥尔摩)
+  settings: 128*3(c6i)
+  security_group: sg-004b4f1d664f7f3e0
+  images:
+    default_x86:
+      image_id: ami-0d3a2960fcac852bc
+      snapshot_id: snap-0daa9ef83b68a90cb
+      device_name: /dev/xvda
+      mini_size: 8
