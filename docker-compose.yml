@@ -1,0 +1,14 @@
+version: '3.8'  # 使用版本3.8，但你可以根据需要选择适合你Docker环境的版本
+
+services:
+  ubuntu-desktop:
+    image: public.ecr.aws/lensfa/workos-kasm:ub22
+    container_name: work-container  # 可以指定一个容器名称
+    volumes:
+      - /dev/shm:/dev/shm  # 映射共享内存
+      - /home/ec2-user/work:/home/kasm-user/work  # 映射数据卷
+    network_mode: host  # 设置网络模式为 host
+
+    # 只启动图型界面 不启动ssh
+    entrypoint: /gui.sh
+    restart: unless-stopped  # 设置重启策略
