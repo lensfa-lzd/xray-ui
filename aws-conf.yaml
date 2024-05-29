@@ -14,6 +14,11 @@ ap-east-1:
       snapshot_id: snap-08978c828903b5f2b
       device_name: /dev/xvda
       mini_size: 8
+    custom_x86:
+      image_id: ami-01d1e48afcd4ae73a
+      snapshot_id: snap-07f192e42e7fea797
+      device_name: /dev/xvda
+      mini_size: 10
     custom_arm:
       image_id: ami-0b8b4a7635430d3be
       snapshot_id: snap-09bcba0ef3cbb75a4
