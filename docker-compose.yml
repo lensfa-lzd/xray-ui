@@ -8,10 +8,21 @@ services:
       - /dev/shm:/dev/shm  # 映射共享内存
       - /home/ec2-user/work:/home/kasm-user/work  # 映射数据卷
     # network_mode: host  # 设置网络模式为 host
+
     # 指定端口，让容器只使用ipv4网络
     ports:
       - "3389:3389"
+    networks:
+      - gui-network
 
     # 只启动图型界面 不启动ssh
     entrypoint: /gui.sh
     restart: unless-stopped  # 设置重启策略
+
+networks:
+  gui-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+          gateway: 192.168.10.1
