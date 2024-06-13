@@ -8,3 +8,5 @@ curl -o /home/ec2-user/kasm/docker-compose.yml https://raw.githubusercontent.com
 cd /home/ec2-user/work
 unzip data.zip
 rm data.zip
+cd /home/ec2-user/kasm
+docker compose up -d
