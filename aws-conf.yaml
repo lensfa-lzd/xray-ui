@@ -36,3 +36,17 @@ eu-north-1:
   images:
     default_x86: ami-0d3a2960fcac852bc
     custom_x86: ami-0e291293e15148e83
+ap-southeast-3:
+  name: Asia Pacific (Jakarta 印度尼西亚-雅加达)
+  settings: 64*6(c6g)
+  security_group: sg-06786f45f7c897080
+  images:
+    default_arm: ami-001211b1bb7148de3
+    custom_arm: ami-
+ap-southeast-4:
+  name: Asia Pacific (Melbourne 澳大利亚-墨尔本)
+  settings: 64*6(c6g)
+  security_group: sg-09561b6d309ae695f
+  images:
+    default_arm: ami-0d0f3628088434db4
+    custom_arm: ami-
