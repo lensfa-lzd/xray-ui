@@ -4,83 +4,35 @@ ap-east-1:
   security_group: sg-0d55a2423e3533fbd
   images:
     # default -> Amazon Linux 2023 AMI
-    default_x86:
-      image_id: ami-07318fd54a1e93848
-      snapshot_id: snap-01fcd9df57e6c538d
-      device_name: /dev/xvda
-      mini_size: 8
-    default_arm:
-      image_id: ami-0a305c2b3f33f9f1c
-      snapshot_id: snap-08978c828903b5f2b
-      device_name: /dev/xvda
-      mini_size: 8
-    custom_x86:
-      image_id: ami-01b27a8bccb0dba28
-      snapshot_id: snap-02acfaf15b2af7d41
-      device_name: /dev/xvda
-      mini_size: 10
-    custom_arm:
-      image_id: ami-0bac6885dafadd244
-      snapshot_id: snap-02acfaf15b2af7d41
-      device_name: /dev/xvda
-      mini_size: 10
+    default_x86: ami-07318fd54a1e93848
+    default_arm: ami-0a305c2b3f33f9f1c
+    custom_x86: ami-01b27a8bccb0dba28
+    custom_arm: ami-0bac6885dafadd244
 ap-northeast-3:
   name: Asia Pacific (Osaka 日本-大版)
   settings: 128*3(c6i)
   security_group: sg-03987957c3a3465d8
   images:
-    default_x86:
-      image_id: ami-0606d42714af1c87c
-      snapshot_id: snap-023c674edc8c2285e
-      device_name: /dev/xvda
-      mini_size: 8
-    custom_x86:
-      image_id: ami-07c0b9e7c1dd80d82
-      snapshot_id: snap-03d5761e7fec607bc
-      device_name: /dev/xvda
-      mini_size: 10
+    default_x86: ami-0606d42714af1c87c
+    custom_x86: ami-07c0b9e7c1dd80d82
 ca-west-1:
   name: Canada West (Calgary 加拿大-卡尔加里)
   settings: 128*3(c6i)
   security_group: sg-095704fa29d0c2018
   images:
-    default_x86:
-      image_id: ami-0777cc4a534bdfd39
-      snapshot_id: snap-0e1e38c7d4c9e9733
-      device_name: /dev/xvda
-      mini_size: 8
-    custom_x86:
-      image_id: ami-0b4dbbd828a36e795
-      snapshot_id: snap-08445c85ad02035f0
-      device_name: /dev/xvda
-      mini_size: 10
+    default_x86: ami-0777cc4a534bdfd39
+    custom_x86: ami-0b4dbbd828a36e795
 eu-west-1:
   name: EU (Ireland 英国-爱尔兰)
   settings: 128*3(c6a)
   security_group: sg-092e1ecd76be9b210
   images:
-    default_x86:
-      image_id: ami-0ac67a26390dc374d
-      snapshot_id: snap-06f6ab0f3462928e7
-      device_name: /dev/xvda
-      mini_size: 8
-    custom_x86:
-      image_id: ami-0015f6cab56ed0152
-      snapshot_id: snap-005d89ccc7ce6c2d7
-      device_name: /dev/xvda
-      mini_size: 10
+    default_x86: ami-0ac67a26390dc374d
+    custom_x86: ami-0015f6cab56ed0152
 eu-north-1:
   name: EU (Stockholm 瑞典-斯德哥尔摩)
   settings: 128*3(c6i)
   security_group: sg-004b4f1d664f7f3e0
   images:
-    default_x86:
-      image_id: ami-0d3a2960fcac852bc
-      snapshot_id: snap-0daa9ef83b68a90cb
-      device_name: /dev/xvda
-      mini_size: 8
-    custom_x86:
-      image_id: ami-0e291293e15148e83
-      snapshot_id: snap-0b77265a8cbfd9ea3
-      device_name: /dev/xvda
-      mini_size: 10
+    default_x86: ami-0d3a2960fcac852bc
+    custom_x86: ami-0e291293e15148e83
