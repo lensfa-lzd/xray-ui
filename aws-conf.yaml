@@ -23,7 +23,7 @@ ap-southeast-3:
   security_group: sg-06786f45f7c897080
   images:
     default_x86: ami-006e9f3b56e49ce63
-    custom_x86: ami-
+    custom_x86: ami-097d2b64d2e130f85
     default_arm: ami-001211b1bb7148de3
     custom_arm: ami-0b154ef66991db73b
 
@@ -33,7 +33,7 @@ ap-southeast-4:
   security_group: sg-09561b6d309ae695f
   images:
     default_x86: ami-02ac641bd21644579
-    custom_x86: ami-
+    custom_x86: ami-0c30bc8d50bc713d1
     default_arm: ami-0d0f3628088434db4
     custom_arm: ami-02b8d5a62166b50af
 
@@ -71,6 +71,6 @@ eu-central-2:
   security_group: sg-021f4684cf41041e4
   images:
     default_x86: ami-045850ed159a9d603
-    custom_x86: ami
+    custom_x86: ami-091aa9e68cae2d7e9
     default_arm: ami-074b6b76cf6d725e6
-    custom_arm: ami-
+    custom_arm: ami-02a1322d57585ab18
