@@ -5,7 +5,7 @@ ap-east-1:
   images:
     # default -> Amazon Linux 2023 AMI
     default_x86: ami-07318fd54a1e93848
-    custom_x86: ami-01b27a8bccb0dba28
+    custom_x86: ami-0b04e2ea80d34937e
     default_arm: ami-0a305c2b3f33f9f1c
     custom_arm: ami-0bac6885dafadd244
 
