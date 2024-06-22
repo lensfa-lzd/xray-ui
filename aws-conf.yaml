@@ -4,8 +4,8 @@ ap-east-1:
   security_group: sg-0d55a2423e3533fbd
   images:
     # default -> Amazon Linux 2023 AMI
-    custom_arm: ami-01f9c28338ded42d8
-    custom_x86: ami-0c92137c5027d145d
+    custom_arm: ami-031c9e015f9880c6d
+    custom_x86: ami-0830784f8d97c1849
     default_arm: ami-0a305c2b3f33f9f1c
     default_x86: ami-07318fd54a1e93848
 
@@ -14,7 +14,7 @@ ap-northeast-3:
   settings: c6g.16xlarge(64核) 2.752 / c6i.32xlarge(128核) 6.848
   security_group: sg-03987957c3a3465d8
   images:
-    custom_x86: ami-07112da03eac5a75f
+    custom_x86: ami-07620ca3ede02d0d4
     default_x86: ami-0606d42714af1c87c
 
 ap-southeast-3:
@@ -22,8 +22,8 @@ ap-southeast-3:
   settings: c6g.16xlarge(64核) 2.5088 / m6i.32xlarge(128核) 7.68
   security_group: sg-06786f45f7c897080
   images:
-    custom_arm: ami-04dffcfbeb688dfef
-    custom_x86: ami-05c4db22dadef6620
+    custom_arm: ami-0941417738f8d367a
+    custom_x86: ami-0e56701451b169adb
     default_arm: ami-001211b1bb7148de3
     default_x86: ami-006e9f3b56e49ce63
 
@@ -32,8 +32,8 @@ ap-southeast-4:
   settings: c6g.16xlarge(64核) 2.8416 / c6in.32xlarge(128核) 9.472
   security_group: sg-09561b6d309ae695f
   images:
-    custom_arm: ami-06b736d6c3a888934
-    custom_x86: ami-0562e784791e4e8c2
+    custom_arm: ami-0ecaf1e88da124327
+    custom_x86: ami-00d873fa2ea4b91a7
     default_arm: ami-0d0f3628088434db4
     default_x86: ami-02ac641bd21644579
 
@@ -44,7 +44,7 @@ ca-west-1:
   settings: c6g.16xlarge(64核) 2.3808 / c6i.32xlarge(128核) 5.952
   security_group: sg-095704fa29d0c2018
   images:
-    custom_x86: ami-05a42c06e46e1aece
+    custom_x86: ami-06d946960d7dd962d
     default_x86: ami-0777cc4a534bdfd39
 
 
@@ -54,7 +54,7 @@ eu-north-1:
   settings: c6g.16xlarge(64核) 2.336 / c6i.32xlarge(128核) 5.824
   security_group: sg-004b4f1d664f7f3e0
   images:
-    custom_x86: ami-0c0bb908a0505e213
+    custom_x86: ami-047d9013513b6332a
     default_x86: ami-0d3a2960fcac852bc
 
 eu-west-1:
@@ -62,7 +62,7 @@ eu-west-1:
   settings: c6g.16xlarge(64核) 2.3348 / c6a.32xlarge(128核) 5.2532
   security_group: sg-092e1ecd76be9b210
   images:
-    custom_x86: ami-0964d415f64c0513a
+    custom_x86: ami-086b40805d69c3118
     default_x86: ami-0ac67a26390dc374d
 
 eu-central-2:
@@ -70,7 +70,7 @@ eu-central-2:
   settings: c6g.16xlarge(64核) 2.7316 / m6i.32xlarge(128核) 8.096
   security_group: sg-021f4684cf41041e4
   images:
-    custom_arm: ami-02f776123175c7550
-    custom_x86: ami-0c74ecf29471dd025
+    custom_arm: ami-03410daf3ceb82b7c
+    custom_x86: ami-0ce7a888ec68e3599
     default_arm: ami-074b6b76cf6d725e6
     default_x86: ami-045850ed159a9d603
