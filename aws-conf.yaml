@@ -4,38 +4,39 @@ ap-east-1:
   security_group: sg-0d55a2423e3533fbd
   images:
     # default -> Amazon Linux 2023 AMI
-    custom_arm: ami-0d3daa1d388994a3a
-    custom_x86: ami-009133164f32820b0
-    default_arm: ami-0a305c2b3f33f9f1c
-    default_x86: ami-07318fd54a1e93848
+    # 仅声明本区域的可用镜像
+    - custom_arm
+    - custom_x86
+    - default_arm
+    - default_x86
 
 ap-northeast-3:
   name: Asia Pacific (Osaka 日本-大版)
   settings: c6g.16xlarge(64核) 2.752 / c6i.32xlarge(128核) 6.848
   security_group: sg-03987957c3a3465d8
   images:
-    custom_x86: ami-0a4150ef05a5a530a
-    default_x86: ami-0606d42714af1c87c
+    - custom_x86
+    - default_x86
 
 ap-southeast-3:
   name: Asia Pacific (Jakarta 印度尼西亚-雅加达)
   settings: c6g.16xlarge(64核) 2.5088 / m6i.32xlarge(128核) 7.68
   security_group: sg-06786f45f7c897080
   images:
-    custom_arm: ami-04ce67e014172132b
-    custom_x86: ami-09f0aeb1a390e9cd0
-    default_arm: ami-001211b1bb7148de3
-    default_x86: ami-006e9f3b56e49ce63
+    - custom_arm
+    - custom_x86
+    - default_arm
+    - default_x86
 
 ap-southeast-4:
   name: Asia Pacific (Melbourne 澳大利亚-墨尔本)
   settings: c6g.16xlarge(64核) 2.8416 / c6in.32xlarge(128核) 9.472
   security_group: sg-09561b6d309ae695f
   images:
-    custom_arm: ami-07f2431d82e5be014
-    custom_x86: ami-08e77be7aa1715c61
-    default_arm: ami-0d0f3628088434db4
-    default_x86: ami-02ac641bd21644579
+    - custom_arm
+    - custom_x86
+    - default_arm
+    - default_x86
 
 
 
@@ -44,8 +45,8 @@ ca-west-1:
   settings: c6g.16xlarge(64核) 2.3808 / c6i.32xlarge(128核) 5.952
   security_group: sg-095704fa29d0c2018
   images:
-    custom_x86: ami-08e41fe6d96cd09f8
-    default_x86: ami-0777cc4a534bdfd39
+    - custom_x86
+    - default_x86
 
 
 
@@ -54,23 +55,23 @@ eu-north-1:
   settings: c6g.16xlarge(64核) 2.336 / c6i.32xlarge(128核) 5.824
   security_group: sg-004b4f1d664f7f3e0
   images:
-    custom_x86: ami-04aba655aeeede6e4
-    default_x86: ami-0d3a2960fcac852bc
+    - custom_x86
+    - default_x86
 
 eu-west-1:
   name: EU (Ireland 英国-爱尔兰)
   settings: c6g.16xlarge(64核) 2.3348 / c6a.32xlarge(128核) 5.2532
   security_group: sg-092e1ecd76be9b210
   images:
-    custom_x86: ami-075d9ca0c81be4f2f
-    default_x86: ami-0ac67a26390dc374d
+    - custom_x86
+    - default_x86
 
 eu-central-2:
   name: Europe (Zurich 瑞士-苏黎世)
   settings: c6g.16xlarge(64核) 2.7316 / m6i.32xlarge(128核) 8.096
   security_group: sg-021f4684cf41041e4
   images:
-    custom_arm: ami-0016f00184c6e18d9
-    custom_x86: ami-0e7df835baf622c42
-    default_arm: ami-074b6b76cf6d725e6
-    default_x86: ami-045850ed159a9d603
+    - custom_arm
+    - custom_x86
+    - default_arm
+    - default_x86
