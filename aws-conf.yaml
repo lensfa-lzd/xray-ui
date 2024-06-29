@@ -49,6 +49,13 @@ ca-west-1:
     - default_x86
 
 
+us-east-2:
+  name: 美国东部 俄亥俄州
+  settings: c6g.16xlarge(64核) / c7a.24xlarge(96核)
+  security_group: sg-042201b192158b65d
+  images:
+    - custom_x86
+    - default_x86
 
 eu-north-1:
   name: EU (Stockholm 瑞典-斯德哥尔摩)
