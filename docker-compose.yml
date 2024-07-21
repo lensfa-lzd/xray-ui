@@ -2,11 +2,11 @@ version: '3.8'  # 使用版本3.8，但你可以根据需要选择适合你Docke
 
 services:
   ubuntu-desktop:
-    image: public.ecr.aws/lensfa/workos-kasm:ub22
+    image: public.ecr.aws/lensfa/workos-kasm:workos
     container_name: work-container  # 可以指定一个容器名称
     volumes:
       - /dev/shm:/dev/shm  # 映射共享内存
-      - /home/ec2-user/work:/home/kasm-user/work  # 映射数据卷
+      - /home/ec2-user/work:/home/ec2-user/work  # 映射数据卷
     # network_mode: host  # 设置网络模式为 host
 
     # 指定端口，让容器只使用ipv4网络
