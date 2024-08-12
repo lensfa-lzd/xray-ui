@@ -4,10 +4,10 @@
 wget -N --no-check-certificate -O /usr/local/xray-ui-linux-arm64.tar.gz https://github.com/lensfa-lzd/xray-ui/releases/latest/download/xray-ui-linux-arm64.tar.gz
 
 # 解压
-cd /usr/local/
+cd /usr/local/ || exit 1
 tar -xvf xray-ui-linux-arm64.tar.gz
 rm xray-ui-linux-arm64.tar.gz -f
-cd xray-ui
+cd xray-ui || exit 1
 chmod +x xray-ui bin/xray-linux-arm64
 cp -f xray-ui.service /etc/systemd/system/
 wget --no-check-certificate -O /usr/bin/xray-ui https://raw.githubusercontent.com/qist/xray-ui/main/xray-ui.sh
